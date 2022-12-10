@@ -52,7 +52,6 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
           <NoResults text='No Comments Yet! Be First to do add the comment.' />
         )}
       </div>
-      
      {userProfile && <div className='absolute bottom-0 left-0  pb-6 px-2 md:px-10 '>
         <form onSubmit={addComment} className='flex gap-4'>
           <input
