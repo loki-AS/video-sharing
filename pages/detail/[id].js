@@ -14,6 +14,7 @@ import useAuthStore from '../../store/authStore';
 import axios from 'axios';
 
 const Detail = ({ postDetails }) => {
+  
   const [post, setPost] = useState(postDetails);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isVideoMuted, setIsVideoMuted] = useState(false);
