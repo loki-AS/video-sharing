@@ -6,11 +6,11 @@ import { BASE_URL } from '../utils';
 import NoResults from '../components/NoResults';
 
 const Home = ({ videos }) => {
+
   return (
     <>
     <div className='flex flex-col gap-10 videos h-full'>
-      {videos.length 
-        ? videos?.map((video) => (
+      {videos.length > 0 ? videos?.map((video) => (
           <VideoCard post={video} isShowingOnHome key={video._id} />
         )) 
         : <NoResults text={`No Videos`} />}

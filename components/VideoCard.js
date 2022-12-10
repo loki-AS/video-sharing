@@ -65,6 +65,8 @@ const VideoCard = ({ post: { caption, postedBy, video, _id, likes }, isShowingOn
         <div 
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
+        onTouchMove={() => setIsHover(true)}
+        onTouchCancel={() => setIsHover(false)}
         className='rounded-3xl'
         >
           <Link href={`/detail/${_id}`}>
