@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { AiOutlineLogout } from "react-icons/ai"
 import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
-import Logo from '../utils/tiktik-logo.png';
+import Logo from '../utils/video.png';
 
 import { GoogleLogin, googleLogout  } from '@react-oauth/google';
 import { createOrGetUser } from '../utils';
@@ -28,9 +28,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full flex justify-between items-center border-b-2 border-gray-200 py-2 px-4'>
+    <div className='w-full flex justify-between items-center shadow-lg border-b-1 border-gray-200 py-2 px-4'>
         <Link href="/">
-        <div className='w-[100px] md:w-[129px] md:h-[30px] h-[38px]'>
+        <div className='h-16 w-16 flex'>
             <Image
             className='cursor-pointer'
             src={Logo}
@@ -38,6 +38,7 @@ const Navbar = () => {
             layout='responsive'
             priority={true}
             />
+            <h1 className='uppercase mt-5 text-2xl font-poppins tracking-[1px] text-gradient'>Share</h1>
         </div>
         </Link>
 
@@ -93,7 +94,7 @@ const Navbar = () => {
                 removeUser();
               }}
               >
-                <AiOutlineLogout color='red' fontSize={25} />
+                <AiOutlineLogout color={"#33bbcf"} fontSize={25} />
               </button>
               </div>
             ) : (

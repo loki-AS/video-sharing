@@ -68,7 +68,7 @@ const Profile = ({ data }) => {
                     ))
                 ) : (
                     <NoResults 
-                    text={`No ${showUserVideos ? '' : 'Liked'} Videos Yet`}
+                    text={`No ${showUserVideos ? '' : 'Liked Videos et'} Videos Yet`}
                     />
                 )
             }

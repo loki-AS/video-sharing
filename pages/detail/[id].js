@@ -74,7 +74,7 @@ const Detail = ({ postDetails }) => {
     <>
       {post && (
         <div className='flex w-full absolute left-0 top-0 bg-white flex-wrap lg:flex-nowrap'>
-          <div className='relative flex-2 w-[1000px] lg:w-9/12 flex justify-center items-center bg-blurred-img bg-no-repeat bg-cover bg-center'>
+          <div className='relative flex-2 w-[1000px] lg:w-9/12 flex justify-center items-center bg-color-gradient bg-no-repeat bg-cover bg-center'>
             <div className='opacity-90 absolute top-6 left-2 lg:left-6 flex gap-6 z-50'>
               <p className='cursor-pointer ' onClick={() => router.back()}>
                 <MdOutlineCancel className='text-white text-[35px] hover:opacity-90' />
@@ -99,6 +99,7 @@ const Detail = ({ postDetails }) => {
                 )}
               </div>
             </div>
+            
             <div className='absolute bottom-5 lg:bottom-10 right-5 lg:right-10  cursor-pointer'>
               {isVideoMuted ? (
                 <button onClick={() => setIsVideoMuted(false)}>
