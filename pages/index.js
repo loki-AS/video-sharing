@@ -29,7 +29,7 @@ export const getServerSideProps = async ({
   if(topic) {
     response = await axios.get(`${BASE_URL}/api/discover/${topic}`);
   } else {
-    response = await axios.get(`${BASE_URL}/api/post`);
+    response = await axios.get(`https://videoshare-two.vercel.app/api/post`);
   }
   
   return {
